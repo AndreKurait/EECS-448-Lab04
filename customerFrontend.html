@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Store</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+<body>
+    <script src = "formChecker.js"></script>
+
+
+    <h1>Store of 3 random items</h1>
+
+    <form onsubmit="return validate()" action="customerBackend.php" method="post">
+      <div>
+      <img src = "item1.jpg" height="200">
+      <h3>Ugly Mug</h3>
+      <p>Price: $1.00</p>
+      Quantity:<input type="number" min="0" max ="99" value = "0" name="item1" reqired><br><br>
+
+      <img src = "item2.jpg" height="200">
+      <h3>Banana</h3>
+      <p>Price: $2.00</p>
+      Quantity:<input type="number" min="0" max ="99" value = "0" name="item2" required><br><br>
+
+      <img src = "item3.jpg" height="200">
+      <h3>Ream of Paper</h3>
+      <p>Price: $3.00</p>
+      Quantity:<input type="number" min="0" max ="99" value = "0"name="item3"><br><br>
+
+      <h2>Shipping</h2>
+      <input type="radio" name="shipping" value="free" checked> Free 7 day<br>
+      <input type="radio" name="shipping" value="5dollar"> $5.00 three day<br>
+      <input type="radio" name="shipping" value="50dollar"> $50.00 overnight<br>
+
+      <h2>Buyer Info</h2>
+      Email:<input type="text" name="user" required ><br>
+      <br>
+      Password:<input type="text" name="password" required><br>
+      <br>
+
+      <input type = "submit" value = "Submit"><br>
+      <input type="button" value = "Reset" onclick="location.reload(true);">
+      </div>
+    </form>
+
+
+</body>
+  
+
+
+</html>

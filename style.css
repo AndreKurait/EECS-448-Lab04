@@ -1,0 +1,12 @@
+body{
+    background-color: #9111d1;
+    text-align: left;
+}
+
+button:hover{
+    background-color: #A12c12
+}
+
+table, th, td {
+  border: 1px solid black;
+}
